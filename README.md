@@ -380,7 +380,7 @@ def onnx_to_ncnn(input_shape, onnx="out/model.onnx", ncnn_param="out/conv0.param
     with open(ncnn_param, "w") as f:
         f.write(content)
 
-onnx_to_ncnn(input_shape = (3, 224, 224), onnx = "./model.onnx", ncnn_param="./conv0.param", ncnn_bin = "./conv0.bin")
+onnx_to_ncnn(input_shape = (3, 224, 224), onnx = "./model.onnx", ncnn_param="./sobel.param", ncnn_bin = "./sobel.bin")
 print("net success!")
         
 ```
